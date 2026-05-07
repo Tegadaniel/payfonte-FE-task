@@ -2,10 +2,10 @@ import { filterCountries } from "@/hooks/useCountries";
 import type { Country } from "@/types/country";
 
 const COUNTRIES: Country[] = [
-  { name: "Nigeria", code: "+234", currency: "Nigerian Naira", currencyCode: "NGN", locale: "NG" },
-  { name: "Angola", code: "+244", currency: "Angolan Kwanza", currencyCode: "AOA", locale: "AO" },
-  { name: "Ghana", code: "+233", currency: "Ghanaian Cedi", currencyCode: "GHS", locale: "GH" },
-  { name: "France", code: "+33", currency: "Euro", currencyCode: "EUR", locale: "FR" },
+  { name: "Nigeria", code: "+234", currency: "Nigerian Naira", currencyCode: "NGN", currencyIcon: "₦", locale: "NG" },
+  { name: "Angola", code: "+244", currency: "Angolan Kwanza", currencyCode: "AOA", currencyIcon: "Kz", locale: "AO" },
+  { name: "Ghana", code: "+233", currency: "Ghanaian Cedi", currencyCode: "GHS", currencyIcon: "₵", locale: "GH" },
+  { name: "France", code: "+33", currency: "Euro", currencyCode: "EUR", currencyIcon: "€", locale: "FR" },
 ];
 
 test("returns all countries when query is empty", () => {

@@ -11,7 +11,6 @@ export interface Country {
   currency: string;
   currencyCode: string;
   currencyIcon: string;
-  internetCountryCode: string;
   locale: string;
   flag?: string;
   flagURL?: CountryFlagURL;
