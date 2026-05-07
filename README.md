@@ -2,6 +2,8 @@
 
 A Next.js app that integrates with the PayFusion public API to browse, search, and explore country data — phone codes, currencies, flags, and locale info.
 
+**Live demo:** [https://payfonte-fe-task.netlify.app/](https://payfonte-fe-task.netlify.app/)
+
 ## Setup
 
 ```bash
@@ -43,19 +45,27 @@ Vitest + jsdom. The component test uses `react-dom/client` + `act()` (React 19's
 
 ```
 app/
-  layout.tsx        # QueryClientProvider root
-  page.tsx          # Main page — search, filter, list, drawer
+  layout.tsx              # QueryClientProvider root
+  page.tsx                # Main page — search, filter, list, drawer
 components/
-  CountryCard.tsx   # List card for each country
-  CountryDrawer.tsx # Slide-up detail panel + locale toggle
-  SearchBar.tsx     # Search input + filter tabs
-  States.tsx        # Loading, error, and empty state UI
+  CountryCard.tsx         # List card for each country
+  CountryDrawer.tsx       # Slide-up detail panel + locale toggle
+  SearchBar.tsx           # Search input + filter tabs
+  States.tsx              # Loading, error, and empty state UI
 hooks/
-  useCountries.ts   # React Query fetch + client-side filter
-  useDebounce.ts    # Debounce hook
-  useLocale.ts      # Home locale state + localStorage persistence
+  useCountries.ts         # React Query fetch + client-side filter
+  useDebounce.ts          # Debounce hook
+  useLocale.ts            # Home locale state + localStorage persistence
 types/
-  country.ts        # Country, CountryFilters, FilterKey types
+  country.ts              # Country, CountryFilters, FilterKey types
+tests/
+  setup.ts                # Vitest global setup (jest-dom matchers)
+  components/
+    CountryCard.test.tsx  # CountryCard rendering tests
+    SearchBar.test.tsx    # SearchBar interaction tests
+  hooks/
+    useCountries.test.ts  # filterCountries unit tests
+    useDebounce.test.ts   # useDebounce timing tests
 ```
 
 ## Tech Stack
