@@ -1,0 +1,40 @@
+{
+  "header": {
+    "poweredBy": "Powered by Payfonte"
+  },
+  "search": {
+    "placeholder": "Search by {{filter}}…",
+    "clear": "Clear",
+    "totalCountries": "{{count}} countries",
+    "filteredCount": "{{filtered}} of {{total}}"
+  },
+  "filters": {
+    "name": "Name",
+    "code": "Code",
+    "currency": "Currency",
+    "currencyCode": "Currency Code"
+  },
+  "drawer": {
+    "countryCode": "Country Code",
+    "currency": "Currency",
+    "currencySymbol": "Currency Symbol",
+    "currencyPreview": "1,000 in your locale ({{locale}})",
+    "internetCode": "Internet Country Code",
+    "countryId": "Country ID",
+    "region": "Region",
+    "setLocale": "Set as my locale",
+    "removeLocale": "Remove as my locale"
+  },
+  "states": {
+    "loading": "Loading countries",
+    "errorTitle": "Something went wrong",
+    "errorMessage": "We couldn't load the country list. Check your connection and try again.",
+    "retry": "Retry",
+    "noMatchTitle": "No matches found",
+    "noMatchMessage": "No countries match \"{{query}}\". Try a different search term or filter.",
+    "emptyTitle": "No countries available",
+    "emptyMessage": "The country list appears to be empty.",
+    "clearSearch": "Clear search",
+    "allLoaded": "All {{count}} countries loaded"
+  }
+}
