@@ -56,14 +56,14 @@ export function SearchBar({
         )}
       </div>
 
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-1.5">
         <div className="flex gap-1 bg-slate-100 p-1 rounded-lg">
           {FILTER_KEYS.map((key) => (
             <button
               key={key}
               onClick={() => onFilterChange(key)}
               className={`
-                px-3 py-1 rounded-md text-xs font-semibold transition-all duration-150 cursor-pointer
+                flex-1 py-1 rounded-md text-xs font-semibold transition-all duration-150 cursor-pointer
                 ${
                   filterBy === key
                     ? "bg-white text-teal-600 shadow-sm"
@@ -75,7 +75,7 @@ export function SearchBar({
             </button>
           ))}
         </div>
-        <span className="text-xs text-slate-400">
+        <span className="text-xs text-slate-400 text-right">
           {query
             ? t.search.filteredCount
                 .replace("{{filtered}}", String(filtered))
